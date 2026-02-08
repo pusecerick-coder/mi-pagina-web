@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <p>Creada con Visual Studio Code</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+        <section id="inicio" class="card">
+            <h2>Inicio</h2>
+            <p>Esta es mi primera página web. Aquí puedo mostrar mis proyectos, ideas y más.</p>
+            <button onclick="saludar()">Haz clic aquí</button>
+        </section>
+
+        <section id="sobre" class="card">
+            <h2>Sobre mí</h2>
+            <p>Escribe aquí información sobre ti, tu negocio o tus intereses.</p>
+        </section>
+
+        <section id="contacto" class="card">
+            <h2>Contacto</h2>
+            <p>Email: ejemplo@correo.com</p>
+            <p>Teléfono: +51 900 000 000</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Mi Página Web</p>
+    </footer>
+
+    <script>
+        function saludar() {
+            alert("¡Gracias por visitar mi página web!");
+        }
+    </script>
+
+</body>
+</html>
